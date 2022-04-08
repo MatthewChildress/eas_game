@@ -17,12 +17,22 @@ slider.oninput = function () {
 setBtn.addEventListener('click', () => makeGrid());
 rstBtn.addEventListener('click', () => resetGrid());
 
-let makeGrid = () => {
-    let grids = document.getElementById("grids");
-    for(i = 0; i <100; i++) {
-        let cells = document.createElement("div");
+// creating div per click
+function makeGrid(rows,cols) {
+    grids.style.setProperty('--grid-rows', rows);
+    grids.style.setProperty('--grid-cols', cols);
+    for (c = 0; c< (rows * cols); c++) {
+        let cell = document.createElement('div');
+        grids.appendChild(cell).className = 'grid-item';
+    };
+};
 
-        grids.appendChild("cells");
+makeGrid(16,16);
 
-    }
+let mono = document.getElementsByID("")
+
+mono.addEventListener('mouseover', () => monoColor());
+
+function monoColor() {
+    EventTarget.style.color = "black";
 }
