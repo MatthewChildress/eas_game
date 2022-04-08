@@ -1,0 +1,55 @@
+body {
+    display:flex;
+    flex-direction:column;
+    width:100vw;
+    height:100vh;
+}
+
+header {
+    background-color:red;
+}
+
+.sidebar {
+    display:flex;
+    flex-direction:column;
+    width:20%;
+}
+
+.container {
+    display:flex;
+    flex-direction:row;
+
+}
+
+.game {
+    display:flex;
+    flex-direction:column;
+}
+
+
+.slider {
+    -webkit-appearance: none;
+    appearance:none;
+    width:100%;
+    height: 25px;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    background-color:#d3d3d3;
+}
+
+.slider:hover {
+    opacity:1; /*Full shown for mouseover*/
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance:none;
+    appearance:none;
+    width:25px;
+    height:25px;
+    cursor:pointer;
+    background:black;
+}
+
+footer {
+    background-color:red;
+}
