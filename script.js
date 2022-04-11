@@ -14,10 +14,9 @@ slider.oninput = function () {
     
 }
 
-setBtn.addEventListener('click', () => makeGrid());
-rstBtn.addEventListener('click', () => resetGrid());
+setBtn.addEventListener('click', () => makeGrid(slider.value, slider.value));
+rstBtn.addEventListener('click', () => makeGrid(16,16));
 
-// creating div per click
 function makeGrid(rows,cols) {
     grids.style.setProperty('--grid-rows', rows);
     grids.style.setProperty('--grid-cols', cols);
@@ -27,12 +26,3 @@ function makeGrid(rows,cols) {
     };
 };
 
-makeGrid(16,16);
-
-let mono = document.getElementsByID("")
-
-mono.addEventListener('mouseover', () => monoColor());
-
-function monoColor() {
-    EventTarget.style.color = "black";
-}

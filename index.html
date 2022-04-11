@@ -20,8 +20,10 @@
                     <button id="setBtn">Set Grid Size</button>
                     <button id="rstBtn">Reset Grid Size</button>
                     <div class="slide">
-                        <input type="range" min="16" max="100" value="16" class="slider" id="myRange">
+                        <input type="range" min="16" max="100" value="1" class="slider" id="myRange" data-sizing="px">
                         <p>Grid Size: <span id="sizeNum"></span></p>
+                        <label for="color">Color: </label>
+                        <input id="color" type="color" name="color" value="#ffffff">
                     </div>
                 </div>
                 <div class="grids" id="grids">
