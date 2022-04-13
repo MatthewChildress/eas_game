@@ -8,6 +8,7 @@ let gridBox = document.querySelector("grids");
 let col = document.getElementById('color');
 let colOutput = document.getElementById('colOutput');
 let curColor = '#000000'
+let size = slider.value
 
 output.innerHTML = slider.value;
 //Reports back the information from slider as it adjusts
@@ -44,10 +45,10 @@ function runs a for loop for iterations equal to sides of grid based on slider.
 function creates children divs for div class="grids" to the amount set by slider.value
 class names are set for the new divs as 'grid-item' which sets css values for each div.
 Newly created divs have eventlisteners attached to them*/
-function makeGrid(rows,cols) {
+function makeGrid(size) {
     resetGrid()
-    grids.style.setProperty('--grid-rows', rows)
-    grids.style.setProperty('--grid-cols', cols)
+    grids.style.gridTemplateRows = `repeat(${size}, 1fr)`
+    grids.style.gridTemplateColumns = `repeat(${size}, 1fr)`
     let gridSize = slider.value * slider.value;
     for (i = 0; i < gridSize; i++) {
         let cell = document.createElement('div');
