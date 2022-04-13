@@ -1,5 +1,3 @@
-// need to connect slider as event listener to grid sizing
-// need to make function for appends for more or less divs
 // need to make event listeners for buttons
 // need connect js and css
 let slider = document.getElementById("myRange");
@@ -34,7 +32,7 @@ function makeGrid(rows,cols) {
     for (i = 0; i < gridSize; i++) {
         let cell = document.createElement('div');
         grids.appendChild(cell).className = 'grid-item';
-        cell.setAttribute('id', [i]);
+        cell.setAttribute('id', [i]); // set for dev tools div count
     };
 };
 
