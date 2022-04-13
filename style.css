@@ -1,6 +1,6 @@
 :root {
-    --grid-cols:16;
-    --grid-rows:16;
+    --grid-cols:0;
+    --grid-rows:0;
 }
 
 body {
@@ -42,6 +42,7 @@ header {
     border: 1px solid black;
     display: inline-block;
     margin:0px;
+    background-color:#d3d3d3;
 }
 
 .slider {

@@ -7,10 +7,11 @@ let output = document.getElementById("sizeNum");
 let setBtn = document.getElementById("setBtn");
 let rstBtn = document.getElementById("rstBtn");
 let gridBox = document.querySelector("grids");
+let col = document.getElementById("color");
 
 
-let tiles = 16;
 output.innerHTML = slider.value;
+
 
 //Reports back the information from slider as it adjusts
 slider.oninput = function () {
@@ -33,6 +34,7 @@ function makeGrid(rows,cols) {
     for (i = 0; i < gridSize; i++) {
         let cell = document.createElement('div');
         grids.appendChild(cell).className = 'grid-item';
+        cell.setAttribute('id', [i]);
     };
 };
 
@@ -41,4 +43,10 @@ function resetGrid() {
     while(grids.firstChild) {
         grids.removeChild(grids.firstChild);
     }
+}
+
+// beginning of background color change function
+function cellColor() {
+    this.style.backgroundColor = col.value;
+    return;
 }
