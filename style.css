@@ -18,10 +18,7 @@ header {
 }
 
 
-.container {
-    grid-column: 8 / 19;
-    grid-row: 5 / 16;
-}
+
 
 .buttons {
     grid-column: 3 /6;
@@ -37,7 +34,6 @@ header {
 }
 
 .grid-item {
-    padding:1em;
     border: 1px solid black;
     display: inline-block;
     margin:0px;
