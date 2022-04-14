@@ -19,15 +19,18 @@
                 <button id="rstBtn">Reset Grid Size</button>
             </div>
             <div class="slide">
-                <input type="range" min="16" max="100" value="1" class="slider" id="myRange" data-sizing="px">
                 <p>Grid Size: <span id="sizeNum"></span></p>
+                <input type="range" min="16" max="100" value="1" class="slider" id="myRange" data-sizing="px">
+                
             </div>
             <div class="rgb">
                 <label for="col">Color:   </label>
                 <input id="color" type="color" name="color">
             </div>
         </div>
-        <div class="grids" id="grids"></div>
+        <div class="grid-wrapper">
+            <div class="grids" id="grids"></div>
+        </div>
     </div>
     <footer>&#169 Amy Says So</footer>
     <script src="script.js" defer></script>

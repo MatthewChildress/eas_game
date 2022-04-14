@@ -16,7 +16,6 @@ slider.oninput = function () {
     output.innerHTML = `${slider.value} X ${slider.value}`;
 }
 
-})
 // as input changes. setCol changes code
 col.onchange = (e) => setCol(e.target.value)
 // makes curColor value from input. console.log to verify
