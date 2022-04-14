@@ -13,18 +13,22 @@
         <h2>Etch-A-Sketch</h2>
     </header>
     <div class="container">
+        <div class="sidebar">
+            <div class="buttons">
+                <button id="setBtn">Set Grid Size</button>
+                <button id="rstBtn">Reset Grid Size</button>
+            </div>
+            <div class="slide">
+                <input type="range" min="16" max="100" value="1" class="slider" id="myRange" data-sizing="px">
+                <p>Grid Size: <span id="sizeNum"></span></p>
+            </div>
+            <div class="rgb">
+                <label for="col">Color:   </label>
+                <input id="color" type="color" name="color">
+                <span id="colOutput"></span>
+            </div>
+        </div>
         <div class="grids" id="grids"></div>
-    </div>
-    <div class="buttons">
-        <button id="setBtn">Set Grid Size</button>
-        <button id="rstBtn">Reset Grid Size</button>
-    </div>
-    <div class="slide">
-        <input type="range" min="16" max="100" value="1" class="slider" id="myRange" data-sizing="px">
-        <p>Grid Size: <span id="sizeNum"></span></p>
-        <label for="col">Color:   </label>
-        <input id="color" type="color" name="color">
-        <span id="colOutput"></span>
     </div>
     <footer>&#169 Amy Says So</footer>
     <script src="script.js" defer></script>

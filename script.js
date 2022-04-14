@@ -10,10 +10,10 @@ let colOutput = document.getElementById('colOutput');
 let curColor = '#000000'
 let size = slider.value
 
-output.innerHTML = slider.value;
+output.innerHTML = `${slider.value} X ${slider.value}`;
 //Reports back the information from slider as it adjusts
 slider.oninput = function () {
-    output.innerHTML = this.value;
+    output.innerHTML = `${slider.value} X ${slider.value}`;
 }
 // shows on screen hexa code for color
 col.addEventListener('input', () => {
