@@ -15,9 +15,7 @@ output.innerHTML = `${slider.value} X ${slider.value}`;
 slider.oninput = function () {
     output.innerHTML = `${slider.value} X ${slider.value}`;
 }
-// shows on screen hexa code for color
-col.addEventListener('input', () => {
-    colOutput.innerHTML = col.value;
+
 })
 // as input changes. setCol changes code
 col.onchange = (e) => setCol(e.target.value)

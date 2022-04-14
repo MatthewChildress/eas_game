@@ -14,10 +14,23 @@ header {
     display:flex;
     justify-content:center;
 }
+
+.container {
+    width:1000px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
 .sidebar {
-    
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+
 }
 .buttons {
+    display:flex;
+    flex-direction:column;
+    gap:32px;
 }
 
 
